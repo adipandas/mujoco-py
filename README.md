@@ -1,6 +1,8 @@
-**Status:** Maintenance (expect bug fixes and minor updates)
-
 # mujoco-py [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](https://openai.github.io/mujoco-py/build/html/index.html) [![Build Status](https://travis-ci.org/openai/mujoco-py.svg?branch=master)](https://travis-ci.org/openai/mujoco-py)
+
+Modified version of ```mujoco-py``` to use **MuJoCo version 2.0**.
+
+For more details, refer issue https://github.com/openai/gym/issues/1541.
 
 [MuJoCo](http://mujoco.org/) is a physics engine for detailed, efficient rigid body simulations with contacts.
 `mujoco-py` allows using MuJoCo from Python 3.
@@ -38,10 +40,19 @@ If you want to specify a nonstandard location for the key and package,
 use the env variables `MUJOCO_PY_MJKEY_PATH` and `MUJOCO_PY_MUJOCO_PATH`.
 
 ### Install and use `mujoco-py`
+
+Installing from source:
+```
+git clone https://github.com/adipandas/mujoco-py.git
+cd mujoco-py
+pip install -e .
+```
+
 To include `mujoco-py` in your own package, add it to your requirements like so:
 ```
 mujoco-py<2.1,>=2.0
 ```
+
 To play with `mujoco-py` interactively, follow these steps:
 ```
 $ pip3 install -U 'mujoco-py<2.1,>=2.0'
