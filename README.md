@@ -43,6 +43,7 @@ use the env variables `MUJOCO_PY_MJKEY_PATH` and `MUJOCO_PY_MUJOCO_PATH`.
 
 Installing from source:
 ```
+sudo apt-get install libosmesa6-dev
 git clone https://github.com/adipandas/mujoco-py.git
 cd mujoco-py
 pip install -e .
